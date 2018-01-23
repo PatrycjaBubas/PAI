@@ -1,0 +1,9 @@
+c:\users\lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopClient\bin\Debug\MusicShopClient.exe.config
+C:\Users\Lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.csprojResolveAssemblyReference.cache
+C:\Users\Lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.Properties.Resources.resources
+C:\Users\Lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.csproj.GenerateResource.Cache
+C:\Users\Lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopClient\bin\Debug\MusicShopClient.exe
+C:\Users\Lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopClient\bin\Debug\MusicShopClient.pdb
+C:\Users\Lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.exe
+C:\Users\Lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.pdb
+C:\Users\Lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.MShopClient.resources
