@@ -38,7 +38,7 @@ namespace MusicShopClient
         {
             using (MusicShopWebServiceClient service = new MusicShopWebServiceClient())
             {
-                service.removeProduct(int.Parse(textBox.Text));
+                service.removeProduct(int.Parse(productIdListBox.Text));
             }
         }
 
@@ -57,11 +57,11 @@ namespace MusicShopClient
             using (MusicShopWebServiceClient service = new MusicShopWebServiceClient())
             {
                 //product newProduct = new product();
-                int productId = int.Parse(textBoxID.Text);
-                string name = textBoxName.Text;
-                int amount = int.Parse(textBoxAmount.Text);
-                int price = int.Parse(textBoxPrice.Text);
-                string description = textBoxDescription.Text;
+                int productId = int.Parse(productIdBox.Text);
+                string name = productNameBox.Text;
+                int amount = int.Parse(productAmountBox.Text);
+                int price = int.Parse(productPriceBox.Text);
+                string description = productDescriptionBox.Text;
                 //categories c = comboBoxCategories.Text;
 
                 service.addNewProduct(productId, name, amount, price);
@@ -86,6 +86,26 @@ namespace MusicShopClient
                     comboBoxCategories.Items.Add(c.catName);
                 }
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

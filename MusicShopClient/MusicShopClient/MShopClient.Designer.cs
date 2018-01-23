@@ -28,233 +28,383 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.listBoxProducts = new System.Windows.Forms.ListBox();
-            this.textBoxID = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxName = new System.Windows.Forms.TextBox();
-            this.textBoxAmount = new System.Windows.Forms.TextBox();
-            this.textBoxPrice = new System.Windows.Forms.TextBox();
-            this.textBoxDescription = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.showProductsButton = new System.Windows.Forms.Button();
+            this.productIdListBox = new System.Windows.Forms.TextBox();
+            this.deleteProductButton = new System.Windows.Forms.Button();
+            this.productIdListLabel = new System.Windows.Forms.Label();
+            this.productIdBox = new System.Windows.Forms.TextBox();
+            this.productIdLabel = new System.Windows.Forms.Label();
+            this.productNameBox = new System.Windows.Forms.TextBox();
+            this.productAmountBox = new System.Windows.Forms.TextBox();
+            this.productPriceBox = new System.Windows.Forms.TextBox();
+            this.productDescriptionBox = new System.Windows.Forms.TextBox();
+            this.productNameLabel = new System.Windows.Forms.Label();
+            this.productAmountLabel = new System.Windows.Forms.Label();
+            this.productPriceLabel = new System.Windows.Forms.Label();
+            this.productDescriptionabel = new System.Windows.Forms.Label();
+            this.addProductButton = new System.Windows.Forms.Button();
             this.comboBoxCategories = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.showCategoriesButton = new System.Windows.Forms.Button();
+            this.addCategoryTabxxxx = new System.Windows.Forms.TabControl();
+            this.listOrDeleteProductTab = new System.Windows.Forms.TabPage();
+            this.addProductTab = new System.Windows.Forms.TabPage();
+            this.listBoxProducts = new System.Windows.Forms.ListBox();
+            this.listCategoriesTab = new System.Windows.Forms.TabPage();
+            this.listBoxCategories = new System.Windows.Forms.ListBox();
+            this.addCategoryTab = new System.Windows.Forms.TabPage();
+            this.categoryIdLabel = new System.Windows.Forms.Label();
+            this.idCategoryBox = new System.Windows.Forms.TextBox();
+            this.nameCategoryBox = new System.Windows.Forms.TextBox();
+            this.addCategoryButton = new System.Windows.Forms.Button();
+            this.categoryNameLabel = new System.Windows.Forms.Label();
+            this.addCategoryTabxxxx.SuspendLayout();
+            this.listOrDeleteProductTab.SuspendLayout();
+            this.addProductTab.SuspendLayout();
+            this.listCategoriesTab.SuspendLayout();
+            this.addCategoryTab.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // showProductsButton
             // 
-            this.button1.Location = new System.Drawing.Point(572, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 35);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Pokaż produkty";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.showProductsButton.Location = new System.Drawing.Point(577, 35);
+            this.showProductsButton.Name = "showProductsButton";
+            this.showProductsButton.Size = new System.Drawing.Size(155, 35);
+            this.showProductsButton.TabIndex = 1;
+            this.showProductsButton.Text = "Pokaż produkty";
+            this.showProductsButton.UseVisualStyleBackColor = true;
+            this.showProductsButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox
+            // productIdListBox
             // 
-            this.textBox.Location = new System.Drawing.Point(572, 101);
-            this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(155, 22);
-            this.textBox.TabIndex = 2;
+            this.productIdListBox.Location = new System.Drawing.Point(577, 382);
+            this.productIdListBox.Name = "productIdListBox";
+            this.productIdListBox.Size = new System.Drawing.Size(155, 22);
+            this.productIdListBox.TabIndex = 2;
             // 
-            // button2
+            // deleteProductButton
             // 
-            this.button2.Location = new System.Drawing.Point(572, 129);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 31);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Usuń produkt";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.deleteProductButton.Location = new System.Drawing.Point(577, 418);
+            this.deleteProductButton.Name = "deleteProductButton";
+            this.deleteProductButton.Size = new System.Drawing.Size(155, 31);
+            this.deleteProductButton.TabIndex = 3;
+            this.deleteProductButton.Text = "Usuń produkt";
+            this.deleteProductButton.UseVisualStyleBackColor = true;
+            this.deleteProductButton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label1
+            // productIdListLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(569, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Identyfikator produktu";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.productIdListLabel.AutoSize = true;
+            this.productIdListLabel.Location = new System.Drawing.Point(587, 350);
+            this.productIdListLabel.Name = "productIdListLabel";
+            this.productIdListLabel.Size = new System.Drawing.Size(145, 17);
+            this.productIdListLabel.TabIndex = 4;
+            this.productIdListLabel.Text = "Identyfikator produktu";
+            this.productIdListLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // listBoxProducts
+            // productIdBox
             // 
-            this.listBoxProducts.FormattingEnabled = true;
-            this.listBoxProducts.ItemHeight = 16;
-            this.listBoxProducts.Location = new System.Drawing.Point(25, 22);
-            this.listBoxProducts.Name = "listBoxProducts";
-            this.listBoxProducts.Size = new System.Drawing.Size(510, 532);
-            this.listBoxProducts.TabIndex = 0;
+            this.productIdBox.Location = new System.Drawing.Point(244, 52);
+            this.productIdBox.Name = "productIdBox";
+            this.productIdBox.Size = new System.Drawing.Size(155, 22);
+            this.productIdBox.TabIndex = 5;
             // 
-            // textBoxID
+            // productIdLabel
             // 
-            this.textBoxID.Location = new System.Drawing.Point(572, 208);
-            this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(155, 22);
-            this.textBoxID.TabIndex = 5;
+            this.productIdLabel.AutoSize = true;
+            this.productIdLabel.Location = new System.Drawing.Point(241, 32);
+            this.productIdLabel.Name = "productIdLabel";
+            this.productIdLabel.Size = new System.Drawing.Size(145, 17);
+            this.productIdLabel.TabIndex = 6;
+            this.productIdLabel.Text = "Identyfikator produktu";
             // 
-            // label2
+            // productNameBox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(569, 188);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 17);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Identyfikator produktu";
+            this.productNameBox.Location = new System.Drawing.Point(244, 104);
+            this.productNameBox.Name = "productNameBox";
+            this.productNameBox.Size = new System.Drawing.Size(155, 22);
+            this.productNameBox.TabIndex = 7;
             // 
-            // textBoxName
+            // productAmountBox
             // 
-            this.textBoxName.Location = new System.Drawing.Point(572, 260);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(155, 22);
-            this.textBoxName.TabIndex = 7;
+            this.productAmountBox.Location = new System.Drawing.Point(244, 160);
+            this.productAmountBox.Name = "productAmountBox";
+            this.productAmountBox.Size = new System.Drawing.Size(155, 22);
+            this.productAmountBox.TabIndex = 8;
             // 
-            // textBoxAmount
+            // productPriceBox
             // 
-            this.textBoxAmount.Location = new System.Drawing.Point(572, 316);
-            this.textBoxAmount.Name = "textBoxAmount";
-            this.textBoxAmount.Size = new System.Drawing.Size(155, 22);
-            this.textBoxAmount.TabIndex = 8;
+            this.productPriceBox.Location = new System.Drawing.Point(244, 218);
+            this.productPriceBox.Name = "productPriceBox";
+            this.productPriceBox.Size = new System.Drawing.Size(155, 22);
+            this.productPriceBox.TabIndex = 9;
             // 
-            // textBoxPrice
+            // productDescriptionBox
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(572, 374);
-            this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(155, 22);
-            this.textBoxPrice.TabIndex = 9;
+            this.productDescriptionBox.Location = new System.Drawing.Point(244, 279);
+            this.productDescriptionBox.Multiline = true;
+            this.productDescriptionBox.Name = "productDescriptionBox";
+            this.productDescriptionBox.Size = new System.Drawing.Size(155, 55);
+            this.productDescriptionBox.TabIndex = 10;
             // 
-            // textBoxDescription
+            // productNameLabel
             // 
-            this.textBoxDescription.Location = new System.Drawing.Point(572, 435);
-            this.textBoxDescription.Multiline = true;
-            this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.Size = new System.Drawing.Size(155, 55);
-            this.textBoxDescription.TabIndex = 10;
+            this.productNameLabel.AutoSize = true;
+            this.productNameLabel.Location = new System.Drawing.Point(241, 84);
+            this.productNameLabel.Name = "productNameLabel";
+            this.productNameLabel.Size = new System.Drawing.Size(50, 17);
+            this.productNameLabel.TabIndex = 11;
+            this.productNameLabel.Text = "Nazwa";
             // 
-            // label3
+            // productAmountLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(569, 240);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 17);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Nazwa";
+            this.productAmountLabel.AutoSize = true;
+            this.productAmountLabel.Location = new System.Drawing.Point(244, 140);
+            this.productAmountLabel.Name = "productAmountLabel";
+            this.productAmountLabel.Size = new System.Drawing.Size(36, 17);
+            this.productAmountLabel.TabIndex = 12;
+            this.productAmountLabel.Text = "Ilość";
             // 
-            // label4
+            // productPriceLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(572, 296);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 17);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Ilość";
+            this.productPriceLabel.AutoSize = true;
+            this.productPriceLabel.Location = new System.Drawing.Point(244, 198);
+            this.productPriceLabel.Name = "productPriceLabel";
+            this.productPriceLabel.Size = new System.Drawing.Size(41, 17);
+            this.productPriceLabel.TabIndex = 13;
+            this.productPriceLabel.Text = "Cena";
+            this.productPriceLabel.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label5
+            // productDescriptionabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(572, 354);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 17);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Cena";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.productDescriptionabel.AutoSize = true;
+            this.productDescriptionabel.Location = new System.Drawing.Point(244, 256);
+            this.productDescriptionabel.Name = "productDescriptionabel";
+            this.productDescriptionabel.Size = new System.Drawing.Size(37, 17);
+            this.productDescriptionabel.TabIndex = 14;
+            this.productDescriptionabel.Text = "Opis";
             // 
-            // label6
+            // addProductButton
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(572, 412);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 17);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Opis";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(572, 615);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(155, 43);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Dodaj produkt";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.addProductButton.Location = new System.Drawing.Point(244, 459);
+            this.addProductButton.Name = "addProductButton";
+            this.addProductButton.Size = new System.Drawing.Size(155, 43);
+            this.addProductButton.TabIndex = 15;
+            this.addProductButton.Text = "Dodaj produkt";
+            this.addProductButton.UseVisualStyleBackColor = true;
+            this.addProductButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // comboBoxCategories
             // 
             this.comboBoxCategories.FormattingEnabled = true;
-            this.comboBoxCategories.Location = new System.Drawing.Point(572, 530);
+            this.comboBoxCategories.Location = new System.Drawing.Point(244, 374);
             this.comboBoxCategories.Name = "comboBoxCategories";
             this.comboBoxCategories.Size = new System.Drawing.Size(155, 24);
             this.comboBoxCategories.TabIndex = 16;
             this.comboBoxCategories.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // button4
+            // showCategoriesButton
             // 
-            this.button4.Location = new System.Drawing.Point(406, 615);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 43);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Pokaż kategorie";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.showCategoriesButton.Location = new System.Drawing.Point(578, 40);
+            this.showCategoriesButton.Name = "showCategoriesButton";
+            this.showCategoriesButton.Size = new System.Drawing.Size(129, 43);
+            this.showCategoriesButton.TabIndex = 17;
+            this.showCategoriesButton.Text = "Pokaż kategorie";
+            this.showCategoriesButton.UseVisualStyleBackColor = true;
+            this.showCategoriesButton.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // addCategoryTabxxxx
+            // 
+            this.addCategoryTabxxxx.Controls.Add(this.listOrDeleteProductTab);
+            this.addCategoryTabxxxx.Controls.Add(this.addProductTab);
+            this.addCategoryTabxxxx.Controls.Add(this.listCategoriesTab);
+            this.addCategoryTabxxxx.Controls.Add(this.addCategoryTab);
+            this.addCategoryTabxxxx.Location = new System.Drawing.Point(0, 0);
+            this.addCategoryTabxxxx.Name = "addCategoryTabxxxx";
+            this.addCategoryTabxxxx.SelectedIndex = 0;
+            this.addCategoryTabxxxx.Size = new System.Drawing.Size(760, 673);
+            this.addCategoryTabxxxx.TabIndex = 18;
+            // 
+            // listOrDeleteProductTab
+            // 
+            this.listOrDeleteProductTab.Controls.Add(this.listBoxProducts);
+            this.listOrDeleteProductTab.Controls.Add(this.showProductsButton);
+            this.listOrDeleteProductTab.Controls.Add(this.productIdListBox);
+            this.listOrDeleteProductTab.Controls.Add(this.productIdListLabel);
+            this.listOrDeleteProductTab.Controls.Add(this.deleteProductButton);
+            this.listOrDeleteProductTab.Location = new System.Drawing.Point(4, 25);
+            this.listOrDeleteProductTab.Name = "listOrDeleteProductTab";
+            this.listOrDeleteProductTab.Padding = new System.Windows.Forms.Padding(3);
+            this.listOrDeleteProductTab.Size = new System.Drawing.Size(752, 644);
+            this.listOrDeleteProductTab.TabIndex = 0;
+            this.listOrDeleteProductTab.Text = "Wyświetl produkty / Usuń produkt";
+            this.listOrDeleteProductTab.UseVisualStyleBackColor = true;
+            // 
+            // addProductTab
+            // 
+            this.addProductTab.Controls.Add(this.productIdLabel);
+            this.addProductTab.Controls.Add(this.productIdBox);
+            this.addProductTab.Controls.Add(this.comboBoxCategories);
+            this.addProductTab.Controls.Add(this.productNameBox);
+            this.addProductTab.Controls.Add(this.addProductButton);
+            this.addProductTab.Controls.Add(this.productAmountBox);
+            this.addProductTab.Controls.Add(this.productDescriptionabel);
+            this.addProductTab.Controls.Add(this.productPriceBox);
+            this.addProductTab.Controls.Add(this.productPriceLabel);
+            this.addProductTab.Controls.Add(this.productDescriptionBox);
+            this.addProductTab.Controls.Add(this.productAmountLabel);
+            this.addProductTab.Controls.Add(this.productNameLabel);
+            this.addProductTab.Location = new System.Drawing.Point(4, 25);
+            this.addProductTab.Name = "addProductTab";
+            this.addProductTab.Padding = new System.Windows.Forms.Padding(3);
+            this.addProductTab.Size = new System.Drawing.Size(752, 644);
+            this.addProductTab.TabIndex = 1;
+            this.addProductTab.Text = "Dodaj produkt";
+            this.addProductTab.UseVisualStyleBackColor = true;
+            // 
+            // listBoxProducts
+            // 
+            this.listBoxProducts.FormattingEnabled = true;
+            this.listBoxProducts.ItemHeight = 16;
+            this.listBoxProducts.Location = new System.Drawing.Point(3, 22);
+            this.listBoxProducts.Name = "listBoxProducts";
+            this.listBoxProducts.Size = new System.Drawing.Size(542, 596);
+            this.listBoxProducts.TabIndex = 1;
+            // 
+            // listCategoriesTab
+            // 
+            this.listCategoriesTab.Controls.Add(this.listBoxCategories);
+            this.listCategoriesTab.Controls.Add(this.showCategoriesButton);
+            this.listCategoriesTab.Location = new System.Drawing.Point(4, 25);
+            this.listCategoriesTab.Name = "listCategoriesTab";
+            this.listCategoriesTab.Padding = new System.Windows.Forms.Padding(3);
+            this.listCategoriesTab.Size = new System.Drawing.Size(752, 644);
+            this.listCategoriesTab.TabIndex = 2;
+            this.listCategoriesTab.Text = "Kategorie";
+            this.listCategoriesTab.UseVisualStyleBackColor = true;
+            // 
+            // listBoxCategories
+            // 
+            this.listBoxCategories.FormattingEnabled = true;
+            this.listBoxCategories.ItemHeight = 16;
+            this.listBoxCategories.Location = new System.Drawing.Point(8, 19);
+            this.listBoxCategories.Name = "listBoxCategories";
+            this.listBoxCategories.Size = new System.Drawing.Size(542, 596);
+            this.listBoxCategories.TabIndex = 18;
+            // 
+            // addCategoryTab
+            // 
+            this.addCategoryTab.Controls.Add(this.categoryIdLabel);
+            this.addCategoryTab.Controls.Add(this.idCategoryBox);
+            this.addCategoryTab.Controls.Add(this.nameCategoryBox);
+            this.addCategoryTab.Controls.Add(this.addCategoryButton);
+            this.addCategoryTab.Controls.Add(this.categoryNameLabel);
+            this.addCategoryTab.Location = new System.Drawing.Point(4, 25);
+            this.addCategoryTab.Name = "addCategoryTab";
+            this.addCategoryTab.Padding = new System.Windows.Forms.Padding(3);
+            this.addCategoryTab.Size = new System.Drawing.Size(752, 644);
+            this.addCategoryTab.TabIndex = 3;
+            this.addCategoryTab.Text = "Dodaj kategorię";
+            this.addCategoryTab.UseVisualStyleBackColor = true;
+            // 
+            // categoryIdLabel
+            // 
+            this.categoryIdLabel.AutoSize = true;
+            this.categoryIdLabel.Location = new System.Drawing.Point(266, 151);
+            this.categoryIdLabel.Name = "categoryIdLabel";
+            this.categoryIdLabel.Size = new System.Drawing.Size(135, 17);
+            this.categoryIdLabel.TabIndex = 17;
+            this.categoryIdLabel.Text = "Identyfikator kategrii";
+            this.categoryIdLabel.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // idCategoryBox
+            // 
+            this.idCategoryBox.Location = new System.Drawing.Point(269, 171);
+            this.idCategoryBox.Name = "idCategoryBox";
+            this.idCategoryBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.idCategoryBox.Size = new System.Drawing.Size(155, 22);
+            this.idCategoryBox.TabIndex = 16;
+            this.idCategoryBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // nameCategoryBox
+            // 
+            this.nameCategoryBox.Location = new System.Drawing.Point(269, 223);
+            this.nameCategoryBox.Name = "nameCategoryBox";
+            this.nameCategoryBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.nameCategoryBox.Size = new System.Drawing.Size(155, 22);
+            this.nameCategoryBox.TabIndex = 18;
+            this.nameCategoryBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // addCategoryButton
+            // 
+            this.addCategoryButton.Location = new System.Drawing.Point(269, 360);
+            this.addCategoryButton.Name = "addCategoryButton";
+            this.addCategoryButton.Size = new System.Drawing.Size(155, 43);
+            this.addCategoryButton.TabIndex = 20;
+            this.addCategoryButton.Text = "Dodaj kategorię";
+            this.addCategoryButton.UseVisualStyleBackColor = true;
+            // 
+            // categoryNameLabel
+            // 
+            this.categoryNameLabel.AutoSize = true;
+            this.categoryNameLabel.Location = new System.Drawing.Point(266, 203);
+            this.categoryNameLabel.Name = "categoryNameLabel";
+            this.categoryNameLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.categoryNameLabel.Size = new System.Drawing.Size(50, 17);
+            this.categoryNameLabel.TabIndex = 19;
+            this.categoryNameLabel.Text = "Nazwa";
+            this.categoryNameLabel.Click += new System.EventHandler(this.label8_Click);
             // 
             // MShopClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(761, 670);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.comboBoxCategories);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBoxDescription);
-            this.Controls.Add(this.textBoxPrice);
-            this.Controls.Add(this.textBoxAmount);
-            this.Controls.Add(this.textBoxName);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBoxID);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBoxProducts);
+            this.Controls.Add(this.addCategoryTabxxxx);
             this.Name = "MShopClient";
             this.Text = "Music Shop Cilent";
+            this.addCategoryTabxxxx.ResumeLayout(false);
+            this.listOrDeleteProductTab.ResumeLayout(false);
+            this.listOrDeleteProductTab.PerformLayout();
+            this.addProductTab.ResumeLayout(false);
+            this.addProductTab.PerformLayout();
+            this.listCategoriesTab.ResumeLayout(false);
+            this.addCategoryTab.ResumeLayout(false);
+            this.addCategoryTab.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBoxProducts;
-        private System.Windows.Forms.TextBox textBoxID;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxName;
-        private System.Windows.Forms.TextBox textBoxAmount;
-        private System.Windows.Forms.TextBox textBoxPrice;
-        private System.Windows.Forms.TextBox textBoxDescription;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button showProductsButton;
+        private System.Windows.Forms.TextBox productIdListBox;
+        private System.Windows.Forms.Button deleteProductButton;
+        private System.Windows.Forms.Label productIdListLabel;
+        private System.Windows.Forms.TextBox productIdBox;
+        private System.Windows.Forms.Label productIdLabel;
+        private System.Windows.Forms.TextBox productNameBox;
+        private System.Windows.Forms.TextBox productAmountBox;
+        private System.Windows.Forms.TextBox productPriceBox;
+        private System.Windows.Forms.TextBox productDescriptionBox;
+        private System.Windows.Forms.Label productNameLabel;
+        private System.Windows.Forms.Label productAmountLabel;
+        private System.Windows.Forms.Label productPriceLabel;
+        private System.Windows.Forms.Label productDescriptionabel;
+        private System.Windows.Forms.Button addProductButton;
         private System.Windows.Forms.ComboBox comboBoxCategories;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button showCategoriesButton;
+        private System.Windows.Forms.TabControl addCategoryTabxxxx;
+        private System.Windows.Forms.TabPage listOrDeleteProductTab;
+        private System.Windows.Forms.ListBox listBoxProducts;
+        private System.Windows.Forms.TabPage addProductTab;
+        private System.Windows.Forms.TabPage listCategoriesTab;
+        private System.Windows.Forms.ListBox listBoxCategories;
+        private System.Windows.Forms.TabPage addCategoryTab;
+        private System.Windows.Forms.Label categoryIdLabel;
+        private System.Windows.Forms.TextBox idCategoryBox;
+        private System.Windows.Forms.TextBox nameCategoryBox;
+        private System.Windows.Forms.Button addCategoryButton;
+        private System.Windows.Forms.Label categoryNameLabel;
     }
 }
 
