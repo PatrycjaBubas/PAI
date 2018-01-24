@@ -75,13 +75,17 @@ public class MusicShopWebService {
      * Web service operation
      */
     @WebMethod(operationName = "addNewProduct")
-    public void addNewProduct(@WebParam(name = "id") BigDecimal id, 
+    public void addNewProduct(@WebParam(name = "id") Double id, 
             @WebParam(name = "name") String name,
-            @WebParam(name = "price") BigDecimal price,
-            @WebParam(name = "amount") long amount) {
+            @WebParam(name = "price") Double price,
+            @WebParam(name = "amount") long amount,
+            @WebParam(name = "description") String desc,
+            @WebParam(name = "catName") String catName) {
         //TODO write your implementation code here:
-        
-        Products newProduct = new Products(id, name, price, amount);
+        BigDecimal price_ = new BigDecimal(price);
+        BigDecimal id_ = new BigDecimal(id);
+        Categories category = categoryBean.findCategoryByName(catName);
+        Products newProduct = new Products(id_, name, price_, amount, desc, category);
         productBean.addProduct(newProduct);
     }
 
@@ -90,7 +94,16 @@ public class MusicShopWebService {
      */
     @WebMethod(operationName = "removeProduct")
     public void removeProduct(@WebParam(name = "id") int id) {
-       // productBean.removeProduct(id);
+        BigDecimal id_ = new BigDecimal(id);
+        productBean.removeProduct(id_);
     }
     
+    @WebMethod(operationName = "addNewCategory")
+    public void addNewCategory(@WebParam(name = "id") int id, 
+            @WebParam(name = "name") String name) {
+        //TODO write your implementation code here:
+        BigDecimal id_ = new BigDecimal(id);
+        Categories newCategory = new Categories(id_, name);
+        categoryBean.addCategory(newCategory);
+    }
 }

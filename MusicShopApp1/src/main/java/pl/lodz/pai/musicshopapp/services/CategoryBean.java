@@ -25,4 +25,12 @@ public class CategoryBean implements Serializable {
     public List<Categories> getAllCategories() {
         return categoryFacade.findAll();
     }
+    
+    public Categories findCategoryByName(String catName) {
+        return categoryFacade.findByCatName(catName);
+    }
+
+    public void addCategory(Categories newCategory) {
+        categoryFacade.create(newCategory);
+    }
 }

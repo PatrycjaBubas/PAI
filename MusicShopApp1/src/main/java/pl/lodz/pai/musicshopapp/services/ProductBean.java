@@ -6,6 +6,7 @@
 package pl.lodz.pai.musicshopapp.services;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.ManagedBean;
@@ -54,14 +55,15 @@ public class ProductBean implements Serializable {
         //endpoint.addProduct(product);
     }   
     
-    public void removeProduct(int id) {
-        for(Product p : productList) {
-            if(id == p.getProductId()) {
-                productList.remove(p);
-                break;
-            }
-        }
-        
+    public void removeProduct(BigDecimal id) {
+//        for(Product p : productList) {
+//            if(id == p.getProductId()) {
+//                productList.remove(p);
+//                break;
+//            }
+//        }
+        Products p = productFacade.find(id);
+        productFacade.remove(p);
     }
     
 //    public List<Product> getAllproducts() {

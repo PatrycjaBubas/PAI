@@ -7,7 +7,9 @@ package pl.lodz.pai.musicshopapp.facades;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import pl.lodz.pai.musicshopapp.entities.Categories;
 
 /**
@@ -28,4 +30,13 @@ public class CategoriesFacade extends AbstractFacade<Categories> {//implements C
         super(Categories.class);
     }
     
+    public Categories findByCatName(String catName) {
+        Query q = em.createNamedQuery("Categories.findByCatName");
+        q.setParameter("catName", catName);
+        try {
+            return (Categories) q.getSingleResult();
+        } catch (NoResultException ex) {
+            return null;
+        }
+    }
 }

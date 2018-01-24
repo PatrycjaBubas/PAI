@@ -91,6 +91,15 @@ public class Products implements Serializable {
         this.prdPrice = prdPrice;
         this.prdAmount = prdAmount;
     }
+    
+    public Products(BigDecimal prdId, String prdName, BigDecimal prdPrice, long prdAmount, String description, Categories category) {
+        this.prdId = prdId;
+        this.prdName = prdName;
+        this.prdPrice = prdPrice;
+        this.prdAmount = prdAmount;
+        this.prdDescription = description;
+        this.prdCatId = category;
+    }
 
     public BigDecimal getPrdId() {
         return prdId;
