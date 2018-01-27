@@ -7,3 +7,13 @@ C:\Users\Lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopCl
 C:\Users\Lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.exe
 C:\Users\Lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.pdb
 C:\Users\Lopez\documents\visual studio 2013\Projects\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.MShopClient.resources
+C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\bin\Debug\MusicShopClient.exe.config
+C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\bin\Debug\MusicShopClient.exe
+C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\bin\Debug\MusicShopClient.pdb
+C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.csprojResolveAssemblyReference.cache
+C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.MShopClient.resources
+C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.Properties.Resources.resources
+C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.csproj.GenerateResource.Cache
+C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.csproj.CoreCompileInputs.cache
+C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.exe
+C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.pdb

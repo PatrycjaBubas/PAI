@@ -60,21 +60,16 @@ namespace MusicShopClient
                 int productId = int.Parse(productIdBox.Text);
                 string name = productNameBox.Text;
                 int amount = int.Parse(productAmountBox.Text);
-                int price = int.Parse(productPriceBox.Text);
+                decimal price = decimal.Parse(productPriceBox.Text);
                 string description = productDescriptionBox.Text;
                 //categories c = comboBoxCategories.Text;
 
-                service.addNewProduct(productId, name, amount, price);
+                service.addNewProduct(productId, name, price, amount);
 
             }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button4_Click(object sender, EventArgs e)
         {
             using (MusicShopWebServiceClient service = new MusicShopWebServiceClient())
             {
@@ -83,6 +78,22 @@ namespace MusicShopClient
                 comboBoxCategories.Items.Clear();
                 foreach (categories c in data)
                 {
+                    comboBoxCategories.Items.Add(c.catName);
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            using (MusicShopWebServiceClient service = new MusicShopWebServiceClient())
+            {
+                categories[] data = service.getAllCategories();
+
+                listBoxCategories.Items.Clear();
+                comboBoxCategories.Items.Clear();
+                foreach (categories c in data)
+                {
+                    listBoxCategories.Items.Add(c.catName);
                     comboBoxCategories.Items.Add(c.catName);
                 }
             }
@@ -104,6 +115,11 @@ namespace MusicShopClient
         }
 
         private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productPriceBox_TextChanged(object sender, EventArgs e)
         {
 
         }

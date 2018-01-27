@@ -45,10 +45,10 @@
             this.addProductButton = new System.Windows.Forms.Button();
             this.comboBoxCategories = new System.Windows.Forms.ComboBox();
             this.showCategoriesButton = new System.Windows.Forms.Button();
-            this.addCategoryTabxxxx = new System.Windows.Forms.TabControl();
+            this.allTabs = new System.Windows.Forms.TabControl();
             this.listOrDeleteProductTab = new System.Windows.Forms.TabPage();
-            this.addProductTab = new System.Windows.Forms.TabPage();
             this.listBoxProducts = new System.Windows.Forms.ListBox();
+            this.addProductTab = new System.Windows.Forms.TabPage();
             this.listCategoriesTab = new System.Windows.Forms.TabPage();
             this.listBoxCategories = new System.Windows.Forms.ListBox();
             this.addCategoryTab = new System.Windows.Forms.TabPage();
@@ -57,7 +57,7 @@
             this.nameCategoryBox = new System.Windows.Forms.TextBox();
             this.addCategoryButton = new System.Windows.Forms.Button();
             this.categoryNameLabel = new System.Windows.Forms.Label();
-            this.addCategoryTabxxxx.SuspendLayout();
+            this.allTabs.SuspendLayout();
             this.listOrDeleteProductTab.SuspendLayout();
             this.addProductTab.SuspendLayout();
             this.listCategoriesTab.SuspendLayout();
@@ -137,6 +137,7 @@
             this.productPriceBox.Name = "productPriceBox";
             this.productPriceBox.Size = new System.Drawing.Size(155, 22);
             this.productPriceBox.TabIndex = 9;
+            this.productPriceBox.TextChanged += new System.EventHandler(this.productPriceBox_TextChanged);
             // 
             // productDescriptionBox
             // 
@@ -212,17 +213,17 @@
             this.showCategoriesButton.UseVisualStyleBackColor = true;
             this.showCategoriesButton.Click += new System.EventHandler(this.button4_Click);
             // 
-            // addCategoryTabxxxx
+            // allTabs
             // 
-            this.addCategoryTabxxxx.Controls.Add(this.listOrDeleteProductTab);
-            this.addCategoryTabxxxx.Controls.Add(this.addProductTab);
-            this.addCategoryTabxxxx.Controls.Add(this.listCategoriesTab);
-            this.addCategoryTabxxxx.Controls.Add(this.addCategoryTab);
-            this.addCategoryTabxxxx.Location = new System.Drawing.Point(0, 0);
-            this.addCategoryTabxxxx.Name = "addCategoryTabxxxx";
-            this.addCategoryTabxxxx.SelectedIndex = 0;
-            this.addCategoryTabxxxx.Size = new System.Drawing.Size(760, 673);
-            this.addCategoryTabxxxx.TabIndex = 18;
+            this.allTabs.Controls.Add(this.listOrDeleteProductTab);
+            this.allTabs.Controls.Add(this.addProductTab);
+            this.allTabs.Controls.Add(this.listCategoriesTab);
+            this.allTabs.Controls.Add(this.addCategoryTab);
+            this.allTabs.Location = new System.Drawing.Point(0, 0);
+            this.allTabs.Name = "allTabs";
+            this.allTabs.SelectedIndex = 0;
+            this.allTabs.Size = new System.Drawing.Size(760, 673);
+            this.allTabs.TabIndex = 18;
             // 
             // listOrDeleteProductTab
             // 
@@ -238,6 +239,15 @@
             this.listOrDeleteProductTab.TabIndex = 0;
             this.listOrDeleteProductTab.Text = "Wyświetl produkty / Usuń produkt";
             this.listOrDeleteProductTab.UseVisualStyleBackColor = true;
+            // 
+            // listBoxProducts
+            // 
+            this.listBoxProducts.FormattingEnabled = true;
+            this.listBoxProducts.ItemHeight = 16;
+            this.listBoxProducts.Location = new System.Drawing.Point(3, 22);
+            this.listBoxProducts.Name = "listBoxProducts";
+            this.listBoxProducts.Size = new System.Drawing.Size(542, 596);
+            this.listBoxProducts.TabIndex = 1;
             // 
             // addProductTab
             // 
@@ -260,15 +270,6 @@
             this.addProductTab.TabIndex = 1;
             this.addProductTab.Text = "Dodaj produkt";
             this.addProductTab.UseVisualStyleBackColor = true;
-            // 
-            // listBoxProducts
-            // 
-            this.listBoxProducts.FormattingEnabled = true;
-            this.listBoxProducts.ItemHeight = 16;
-            this.listBoxProducts.Location = new System.Drawing.Point(3, 22);
-            this.listBoxProducts.Name = "listBoxProducts";
-            this.listBoxProducts.Size = new System.Drawing.Size(542, 596);
-            this.listBoxProducts.TabIndex = 1;
             // 
             // listCategoriesTab
             // 
@@ -359,10 +360,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(761, 670);
-            this.Controls.Add(this.addCategoryTabxxxx);
+            this.Controls.Add(this.allTabs);
             this.Name = "MShopClient";
             this.Text = "Music Shop Cilent";
-            this.addCategoryTabxxxx.ResumeLayout(false);
+            this.allTabs.ResumeLayout(false);
             this.listOrDeleteProductTab.ResumeLayout(false);
             this.listOrDeleteProductTab.PerformLayout();
             this.addProductTab.ResumeLayout(false);
@@ -393,7 +394,7 @@
         private System.Windows.Forms.Button addProductButton;
         private System.Windows.Forms.ComboBox comboBoxCategories;
         private System.Windows.Forms.Button showCategoriesButton;
-        private System.Windows.Forms.TabControl addCategoryTabxxxx;
+        private System.Windows.Forms.TabControl allTabs;
         private System.Windows.Forms.TabPage listOrDeleteProductTab;
         private System.Windows.Forms.ListBox listBoxProducts;
         private System.Windows.Forms.TabPage addProductTab;
