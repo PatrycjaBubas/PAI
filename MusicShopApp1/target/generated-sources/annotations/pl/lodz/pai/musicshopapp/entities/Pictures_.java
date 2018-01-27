@@ -6,7 +6,7 @@ import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 import pl.lodz.pai.musicshopapp.entities.Products;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-01-24T21:29:32")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-01-26T23:39:08")
 @StaticMetamodel(Pictures.class)
 public class Pictures_ { 
 

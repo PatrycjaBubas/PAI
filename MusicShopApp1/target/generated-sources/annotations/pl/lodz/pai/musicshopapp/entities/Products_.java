@@ -9,7 +9,7 @@ import pl.lodz.pai.musicshopapp.entities.Categories;
 import pl.lodz.pai.musicshopapp.entities.OrderDetails;
 import pl.lodz.pai.musicshopapp.entities.Pictures;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-01-24T21:29:32")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-01-26T23:39:08")
 @StaticMetamodel(Products.class)
 public class Products_ { 
 
