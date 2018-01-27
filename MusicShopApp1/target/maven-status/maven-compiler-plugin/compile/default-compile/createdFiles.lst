@@ -12,6 +12,7 @@ pl\lodz\pai\musicshopapp\entities\OrderDetails.class
 pl\lodz\pai\musicshopapp\entities\OrderDetails_.class
 pl\lodz\pai\musicshopapp\services\ProductBean.class
 pl\lodz\pai\musicshopapp\facades\UsersFacade.class
+pl\lodz\pai\musicshopapp\services\OrderBean.class
 pl\lodz\pai\musicshopapp\entities\Orders_.class
 pl\lodz\pai\musicshopapp\entities\Products.class
 pl\lodz\pai\musicshopapp\entities\EventHistory_.class
@@ -27,8 +28,10 @@ pl\lodz\pai\musicshopapp\facades\ProductsFacade.class
 pl\lodz\pai\musicshopapp\entities\EventHistory.class
 pl\lodz\pai\musicshopapp\services\CategoryBean.class
 pl\lodz\pai\musicshopapp\entities\Categories.class
+pl\lodz\pai\musicshopapp\services\UserBean.class
 pl\lodz\pai\musicshopapp\facades\EventHistoryFacade.class
 pl\lodz\pai\musicshopapp\entities\Users.class
+pl\lodz\pai\musicshopapp\services\OrderDetailsBean.class
 pl\lodz\pai\musicshopapp\facades\CategoriesFacade.class
 pl\lodz\pai\musicshopapp\facades\PicturesFacade.class
 pl\lodz\pai\musicshopapp\facades\OrdersFacadeLocal.class

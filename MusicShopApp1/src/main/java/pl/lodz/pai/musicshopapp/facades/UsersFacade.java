@@ -7,7 +7,9 @@ package pl.lodz.pai.musicshopapp.facades;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import pl.lodz.pai.musicshopapp.entities.Users;
 
 /**
@@ -15,8 +17,8 @@ import pl.lodz.pai.musicshopapp.entities.Users;
  * @author Lopez
  */
 @Stateless
-public class UsersFacade extends AbstractFacade<Users> implements UsersFacadeLocal {
-    @PersistenceContext(unitName = "pl.lodz.pai_MusicShopApp_war_1.0-SNAPSHOTPU")
+public class UsersFacade extends AbstractFacade<Users> {//implements UsersFacadeLocal {
+    @PersistenceContext//(unitName = "pl.lodz.pai_MusicShopApp_war_1.0-SNAPSHOTPU")
     private EntityManager em;
 
     @Override
@@ -28,4 +30,13 @@ public class UsersFacade extends AbstractFacade<Users> implements UsersFacadeLoc
         super(Users.class);
     }
     
+    public Users findByUsrLogin(String usrLogin) {
+        Query q = em.createNamedQuery("Users.findByUsrLogin");
+        q.setParameter("usrLogin", usrLogin);
+        try {
+            return (Users) q.getSingleResult();
+        } catch (NoResultException ex) {
+            return null;
+        }
+    }
 }

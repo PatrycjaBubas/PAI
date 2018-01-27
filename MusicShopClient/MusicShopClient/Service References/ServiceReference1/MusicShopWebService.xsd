@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://ws.musicshopapp.pai.lodz.pl/" targetNamespace="http://ws.musicshopapp.pai.lodz.pl/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="addNewCategory" type="tns:addNewCategory" />
+  <xs:element name="addNewCategoryResponse" type="tns:addNewCategoryResponse" />
+  <xs:element name="addNewOrder" type="tns:addNewOrder" />
+  <xs:element name="addNewOrderResponse" type="tns:addNewOrderResponse" />
   <xs:element name="addNewProduct" type="tns:addNewProduct" />
   <xs:element name="addNewProductResponse" type="tns:addNewProductResponse" />
   <xs:element name="categories" type="tns:categories" />
   <xs:element name="getAllCategories" type="tns:getAllCategories" />
   <xs:element name="getAllCategoriesResponse" type="tns:getAllCategoriesResponse" />
+  <xs:element name="getAllOrders" type="tns:getAllOrders" />
+  <xs:element name="getAllOrdersResponse" type="tns:getAllOrdersResponse" />
   <xs:element name="getAllProducts" type="tns:getAllProducts" />
   <xs:element name="getAllProductsResponse" type="tns:getAllProductsResponse" />
-  <xs:element name="hello" type="tns:hello" />
-  <xs:element name="helloResponse" type="tns:helloResponse" />
+  <xs:element name="getAllUsers" type="tns:getAllUsers" />
+  <xs:element name="getAllUsersResponse" type="tns:getAllUsersResponse" />
+  <xs:element name="orders" type="tns:orders" />
   <xs:element name="products" type="tns:products" />
   <xs:element name="removeProduct" type="tns:removeProduct" />
   <xs:element name="removeProductResponse" type="tns:removeProductResponse" />
+  <xs:element name="users" type="tns:users" />
   <xs:complexType name="addNewProduct">
     <xs:sequence>
-      <xs:element minOccurs="0" name="id" type="xs:decimal" />
+      <xs:element minOccurs="0" name="id" type="xs:double" />
       <xs:element minOccurs="0" name="name" type="xs:string" />
-      <xs:element minOccurs="0" name="price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="price" type="xs:double" />
       <xs:element name="amount" type="xs:long" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element minOccurs="0" name="catName" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="addNewProductResponse">
@@ -47,6 +57,24 @@
       <xs:element minOccurs="0" name="catName" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="getAllUsers">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getAllUsersResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:users" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="users">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usrFirstName" type="xs:string" />
+      <xs:element minOccurs="0" name="usrId" type="xs:decimal" />
+      <xs:element minOccurs="0" name="usrIsActive" type="xs:string" />
+      <xs:element minOccurs="0" name="usrLastName" type="xs:string" />
+      <xs:element minOccurs="0" name="usrLogin" type="xs:string" />
+      <xs:element minOccurs="0" name="usrPassword" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="removeProduct">
     <xs:sequence>
       <xs:element name="id" type="xs:int" />
@@ -55,14 +83,24 @@
   <xs:complexType name="removeProductResponse">
     <xs:sequence />
   </xs:complexType>
-  <xs:complexType name="hello">
+  <xs:complexType name="getAllOrders">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getAllOrdersResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:orders" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="helloResponse">
+  <xs:complexType name="orders">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:string" />
+      <xs:element minOccurs="0" name="ordCompletedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ordId" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ordIsCompleted" type="xs:string" />
+      <xs:element minOccurs="0" name="ordIsPaid" type="xs:string" />
+      <xs:element minOccurs="0" name="ordOrderDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ordPaiedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ordTotalPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ordUsrId" type="tns:users" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="getAllCategories">
@@ -72,5 +110,27 @@
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:categories" />
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNewOrder">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="userLogin" type="xs:string" />
+      <xs:element minOccurs="0" name="productName" type="xs:string" />
+      <xs:element minOccurs="0" name="orderDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="paymentDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="completedDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNewOrderResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="addNewCategory">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNewCategoryResponse">
+    <xs:sequence />
   </xs:complexType>
 </xs:schema>

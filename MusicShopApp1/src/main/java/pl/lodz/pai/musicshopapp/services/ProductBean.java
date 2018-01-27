@@ -73,4 +73,8 @@ public class ProductBean implements Serializable {
     public List<Products> getAllProducts() {
         return productFacade.findAll();
     }
+    
+    public Products findProductByName(String productName) {
+        return productFacade.findByPrdName(productName);
+    }
 }

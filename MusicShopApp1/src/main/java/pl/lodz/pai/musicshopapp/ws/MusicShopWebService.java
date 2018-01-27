@@ -6,16 +6,23 @@
 package pl.lodz.pai.musicshopapp.ws;
 
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.List;
 import javax.ejb.EJB;
 import javax.jws.WebService;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import pl.lodz.pai.musicshopapp.entities.Categories;
+import pl.lodz.pai.musicshopapp.entities.OrderDetails;
+import pl.lodz.pai.musicshopapp.entities.Orders;
 import pl.lodz.pai.musicshopapp.entities.Products;
+import pl.lodz.pai.musicshopapp.entities.Users;
 import pl.lodz.pai.musicshopapp.model.Product;
 import pl.lodz.pai.musicshopapp.services.CategoryBean;
+import pl.lodz.pai.musicshopapp.services.OrderBean;
+import pl.lodz.pai.musicshopapp.services.OrderDetailsBean;
 import pl.lodz.pai.musicshopapp.services.ProductBean;
+import pl.lodz.pai.musicshopapp.services.UserBean;
 
 /**
  *
@@ -30,13 +37,16 @@ public class MusicShopWebService {
     @EJB
     public CategoryBean categoryBean;
     
-    /**
-     * This is a sample web service operation
-     */
-    @WebMethod(operationName = "hello")
-    public String hello(@WebParam(name = "name") String txt) {
-        return "Hello " + txt + " !";
-    }
+    @EJB
+    public OrderBean orderBean;
+    
+    @EJB
+    public OrderDetailsBean orderDetailsBean;
+    
+    @EJB
+    public UserBean userBean;
+    
+
 
     /**
      * Web service operation
@@ -54,6 +64,16 @@ public class MusicShopWebService {
     @WebMethod(operationName = "getAllCategories")
     public List<Categories> getAllCategories() {
         return categoryBean.getAllCategories();
+    }
+    
+    @WebMethod(operationName = "getAllOrders")
+    public List<Orders> getAllOrders() {
+        return orderBean.getAllOrders();
+    }
+    
+    @WebMethod(operationName = "getAllUsers")
+    public List<Users> getAllUsers() {
+        return userBean.getAllUsers();
     }
     
     /**
@@ -105,5 +125,38 @@ public class MusicShopWebService {
         BigDecimal id_ = new BigDecimal(id);
         Categories newCategory = new Categories(id_, name);
         categoryBean.addCategory(newCategory);
+    }
+    
+    @WebMethod(operationName = "addNewOrder")
+    public void addNewOrder(@WebParam(name = "id") int id, 
+            @WebParam(name = "userLogin") String userLogin,
+            @WebParam(name = "productName") String productName,
+            @WebParam(name = "orderDate") Date orderDate,
+            @WebParam(name = "paymentDate") Date paymentDate,
+            @WebParam(name = "completedDate") Date completedDate) {
+        
+        BigDecimal id_ = new BigDecimal(id);
+        Users user = userBean.findUserByLogin(userLogin);
+        Products product = productBean.findProductByName(productName);
+        
+        String isPaid;
+        String isCompleted;
+        if(paymentDate != null) {
+            isPaid = "Y";
+        } else {
+            isPaid = "N";
+        }
+        
+        if(completedDate != null) {
+            isCompleted = "Y";
+        } else {
+            isCompleted = "N";
+        }
+        
+        Orders order = new Orders(id_, user, orderDate, paymentDate, completedDate, isPaid, isCompleted, product.getPrdPrice());
+        orderBean.addNewOrder(order);
+        OrderDetails orderDetails = new OrderDetails(order, product);
+        orderDetailsBean.addNewOrderDetails(orderDetails);
+
     }
 }

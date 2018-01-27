@@ -99,6 +99,17 @@ public class Orders implements Serializable {
         this.ordIsPaid = ordIsPaid;
         this.ordIsCompleted = ordIsCompleted;
     }
+    
+    public Orders(BigDecimal ordId, Users user, Date orderDate, Date paymentDate, Date completedDate, String isPaid, String isCompleted, BigDecimal prdPrice) {
+        this.ordId = ordId;
+        this.setOrdUsrId(user);
+        this.setOrdOrderDate(orderDate);
+        this.setOrdTotalPrice(prdPrice);
+        this.setOrdPaiedDate(paymentDate);
+        this.setOrdCompletedDate(completedDate);
+        this.ordIsPaid = isPaid;
+        this.ordIsCompleted = isCompleted;
+    }
 
     public BigDecimal getOrdId() {
         return ordId;

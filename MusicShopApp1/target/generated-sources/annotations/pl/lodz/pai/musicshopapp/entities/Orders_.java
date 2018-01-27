@@ -9,7 +9,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 import pl.lodz.pai.musicshopapp.entities.OrderDetails;
 import pl.lodz.pai.musicshopapp.entities.Users;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-01-26T23:39:08")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-01-27T16:55:09")
 @StaticMetamodel(Orders.class)
 public class Orders_ { 
 

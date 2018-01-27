@@ -7,7 +7,9 @@ package pl.lodz.pai.musicshopapp.facades;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import pl.lodz.pai.musicshopapp.entities.Products;
 
 /**
@@ -28,4 +30,13 @@ public class ProductsFacade extends AbstractFacade<Products> { //implements Prod
         super(Products.class);
     }
     
+    public Products findByPrdName(String prdName) {
+        Query q = em.createNamedQuery("Products.findByPrdName");
+        q.setParameter("prdName", prdName);
+        try {
+            return (Products) q.getSingleResult();
+        } catch (NoResultException ex) {
+            return null;
+        }
+    }
 }

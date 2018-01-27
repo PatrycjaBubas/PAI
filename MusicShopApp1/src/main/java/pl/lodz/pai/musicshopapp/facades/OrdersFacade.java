@@ -15,8 +15,8 @@ import pl.lodz.pai.musicshopapp.entities.Orders;
  * @author Lopez
  */
 @Stateless
-public class OrdersFacade extends AbstractFacade<Orders> implements OrdersFacadeLocal {
-    @PersistenceContext(unitName = "pl.lodz.pai_MusicShopApp_war_1.0-SNAPSHOTPU")
+public class OrdersFacade extends AbstractFacade<Orders> {// implements OrdersFacadeLocal {
+    @PersistenceContext//(unitName = "pl.lodz.pai_MusicShopApp_war_1.0-SNAPSHOTPU")
     private EntityManager em;
 
     @Override

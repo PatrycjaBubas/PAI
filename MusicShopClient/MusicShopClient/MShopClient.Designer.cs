@@ -57,11 +57,31 @@
             this.nameCategoryBox = new System.Windows.Forms.TextBox();
             this.addCategoryButton = new System.Windows.Forms.Button();
             this.categoryNameLabel = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.showOrdersButton = new System.Windows.Forms.Button();
+            this.listBoxOrders = new System.Windows.Forms.ListBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.orderIdBox = new System.Windows.Forms.TextBox();
+            this.userComboBox = new System.Windows.Forms.ComboBox();
+            this.productComboBox = new System.Windows.Forms.ComboBox();
+            this.orderDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.paymentDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.completedDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.addOrderButton = new System.Windows.Forms.Button();
             this.allTabs.SuspendLayout();
             this.listOrDeleteProductTab.SuspendLayout();
             this.addProductTab.SuspendLayout();
             this.listCategoriesTab.SuspendLayout();
             this.addCategoryTab.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // showProductsButton
@@ -219,6 +239,8 @@
             this.allTabs.Controls.Add(this.addProductTab);
             this.allTabs.Controls.Add(this.listCategoriesTab);
             this.allTabs.Controls.Add(this.addCategoryTab);
+            this.allTabs.Controls.Add(this.tabPage1);
+            this.allTabs.Controls.Add(this.tabPage2);
             this.allTabs.Location = new System.Drawing.Point(0, 0);
             this.allTabs.Name = "allTabs";
             this.allTabs.SelectedIndex = 0;
@@ -251,6 +273,7 @@
             // 
             // addProductTab
             // 
+            this.addProductTab.Controls.Add(this.label7);
             this.addProductTab.Controls.Add(this.productIdLabel);
             this.addProductTab.Controls.Add(this.productIdBox);
             this.addProductTab.Controls.Add(this.comboBoxCategories);
@@ -343,6 +366,7 @@
             this.addCategoryButton.TabIndex = 20;
             this.addCategoryButton.Text = "Dodaj kategorię";
             this.addCategoryButton.UseVisualStyleBackColor = true;
+            this.addCategoryButton.Click += new System.EventHandler(this.addCategoryButton_Click);
             // 
             // categoryNameLabel
             // 
@@ -354,6 +378,177 @@
             this.categoryNameLabel.TabIndex = 19;
             this.categoryNameLabel.Text = "Nazwa";
             this.categoryNameLabel.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.showOrdersButton);
+            this.tabPage1.Controls.Add(this.listBoxOrders);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(752, 644);
+            this.tabPage1.TabIndex = 4;
+            this.tabPage1.Text = "Zamówienia";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // showOrdersButton
+            // 
+            this.showOrdersButton.Location = new System.Drawing.Point(566, 21);
+            this.showOrdersButton.Name = "showOrdersButton";
+            this.showOrdersButton.Size = new System.Drawing.Size(152, 45);
+            this.showOrdersButton.TabIndex = 1;
+            this.showOrdersButton.Text = "Pokaż zamówienia";
+            this.showOrdersButton.UseVisualStyleBackColor = true;
+            this.showOrdersButton.Click += new System.EventHandler(this.showOrdersButton_Click);
+            // 
+            // listBoxOrders
+            // 
+            this.listBoxOrders.FormattingEnabled = true;
+            this.listBoxOrders.ItemHeight = 16;
+            this.listBoxOrders.Location = new System.Drawing.Point(25, 21);
+            this.listBoxOrders.Name = "listBoxOrders";
+            this.listBoxOrders.Size = new System.Drawing.Size(494, 548);
+            this.listBoxOrders.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.addOrderButton);
+            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.completedDatePicker);
+            this.tabPage2.Controls.Add(this.paymentDatePicker);
+            this.tabPage2.Controls.Add(this.orderDatePicker);
+            this.tabPage2.Controls.Add(this.productComboBox);
+            this.tabPage2.Controls.Add(this.userComboBox);
+            this.tabPage2.Controls.Add(this.orderIdBox);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(752, 644);
+            this.tabPage2.TabIndex = 5;
+            this.tabPage2.Text = "Dodaj zamówienie";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // orderIdBox
+            // 
+            this.orderIdBox.Location = new System.Drawing.Point(268, 70);
+            this.orderIdBox.Name = "orderIdBox";
+            this.orderIdBox.Size = new System.Drawing.Size(205, 22);
+            this.orderIdBox.TabIndex = 0;
+            // 
+            // userComboBox
+            // 
+            this.userComboBox.FormattingEnabled = true;
+            this.userComboBox.Location = new System.Drawing.Point(268, 127);
+            this.userComboBox.Name = "userComboBox";
+            this.userComboBox.Size = new System.Drawing.Size(205, 24);
+            this.userComboBox.TabIndex = 1;
+            // 
+            // productComboBox
+            // 
+            this.productComboBox.FormattingEnabled = true;
+            this.productComboBox.Location = new System.Drawing.Point(268, 182);
+            this.productComboBox.Name = "productComboBox";
+            this.productComboBox.Size = new System.Drawing.Size(205, 24);
+            this.productComboBox.TabIndex = 2;
+            // 
+            // orderDatePicker
+            // 
+            this.orderDatePicker.Location = new System.Drawing.Point(268, 242);
+            this.orderDatePicker.Name = "orderDatePicker";
+            this.orderDatePicker.Size = new System.Drawing.Size(200, 22);
+            this.orderDatePicker.TabIndex = 3;
+            // 
+            // paymentDatePicker
+            // 
+            this.paymentDatePicker.Location = new System.Drawing.Point(268, 295);
+            this.paymentDatePicker.Name = "paymentDatePicker";
+            this.paymentDatePicker.Size = new System.Drawing.Size(200, 22);
+            this.paymentDatePicker.TabIndex = 4;
+            // 
+            // completedDatePicker
+            // 
+            this.completedDatePicker.Location = new System.Drawing.Point(268, 347);
+            this.completedDatePicker.Name = "completedDatePicker";
+            this.completedDatePicker.Size = new System.Drawing.Size(200, 22);
+            this.completedDatePicker.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(268, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 17);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Identyfikator zamówienia";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(268, 104);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(123, 17);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Użytkownik sklepu";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(268, 158);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 17);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Produkt";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(268, 219);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(115, 17);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Data zamówienia";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(268, 271);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 17);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Data opłacenia";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(268, 324);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(142, 17);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Data skompletowania";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(244, 351);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(69, 17);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Kategoria";
+            // 
+            // addOrderButton
+            // 
+            this.addOrderButton.Location = new System.Drawing.Point(268, 394);
+            this.addOrderButton.Name = "addOrderButton";
+            this.addOrderButton.Size = new System.Drawing.Size(200, 32);
+            this.addOrderButton.TabIndex = 12;
+            this.addOrderButton.Text = "Dodaj zamówienie";
+            this.addOrderButton.UseVisualStyleBackColor = true;
+            this.addOrderButton.Click += new System.EventHandler(this.addOrderButton_Click);
             // 
             // MShopClient
             // 
@@ -371,6 +566,9 @@
             this.listCategoriesTab.ResumeLayout(false);
             this.addCategoryTab.ResumeLayout(false);
             this.addCategoryTab.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -406,6 +604,24 @@
         private System.Windows.Forms.TextBox nameCategoryBox;
         private System.Windows.Forms.Button addCategoryButton;
         private System.Windows.Forms.Label categoryNameLabel;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button showOrdersButton;
+        private System.Windows.Forms.ListBox listBoxOrders;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker completedDatePicker;
+        private System.Windows.Forms.DateTimePicker paymentDatePicker;
+        private System.Windows.Forms.DateTimePicker orderDatePicker;
+        private System.Windows.Forms.ComboBox productComboBox;
+        private System.Windows.Forms.ComboBox userComboBox;
+        private System.Windows.Forms.TextBox orderIdBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button addOrderButton;
     }
 }
 

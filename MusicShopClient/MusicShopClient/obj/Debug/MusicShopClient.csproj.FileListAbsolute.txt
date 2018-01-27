@@ -17,3 +17,12 @@ C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient
 C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.csproj.CoreCompileInputs.cache
 C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.exe
 C:\Users\Patrycja\Documents\NetBeansProjects\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.pdb
+C:\Users\Lopez\Desktop\pai-git\PAI\MusicShopClient\MusicShopClient\bin\Debug\MusicShopClient.exe.config
+C:\Users\Lopez\Desktop\pai-git\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.exe
+C:\Users\Lopez\Desktop\pai-git\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.pdb
+C:\Users\Lopez\Desktop\pai-git\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.csprojResolveAssemblyReference.cache
+C:\Users\Lopez\Desktop\pai-git\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.MShopClient.resources
+C:\Users\Lopez\Desktop\pai-git\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.Properties.Resources.resources
+C:\Users\Lopez\Desktop\pai-git\PAI\MusicShopClient\MusicShopClient\obj\Debug\MusicShopClient.csproj.GenerateResource.Cache
+C:\Users\Lopez\Desktop\pai-git\PAI\MusicShopClient\MusicShopClient\bin\Debug\MusicShopClient.exe
+C:\Users\Lopez\Desktop\pai-git\PAI\MusicShopClient\MusicShopClient\bin\Debug\MusicShopClient.pdb

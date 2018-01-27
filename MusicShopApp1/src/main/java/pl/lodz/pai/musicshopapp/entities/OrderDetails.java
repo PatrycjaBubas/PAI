@@ -10,6 +10,8 @@ import java.math.BigDecimal;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -34,6 +36,7 @@ public class OrderDetails implements Serializable {
     
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
     @Id
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     @Basic(optional = false)
     @NotNull
     @Column(name = "DET_ID")
@@ -52,6 +55,18 @@ public class OrderDetails implements Serializable {
 
     public OrderDetails(BigDecimal detId) {
         this.detId = detId;
+    }
+
+    public OrderDetails(Orders detOrdId, Products detPrdId) {
+        this.detId = detOrdId.getOrdId().add(new BigDecimal(1));
+        this.detOrdId = detOrdId;
+        this.detPrdId = detPrdId;
+    }
+
+    public OrderDetails(BigDecimal detId, Orders detOrdId, Products detPrdId) {
+        this.detId = detId;
+        this.detOrdId = detOrdId;
+        this.detPrdId = detPrdId;
     }
 
     public BigDecimal getDetId() {

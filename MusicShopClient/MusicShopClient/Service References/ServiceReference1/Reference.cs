@@ -24,22 +24,29 @@ namespace MusicShopClient.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllCategoriesRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllCategoriesResponse")]
         System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.getAllCategoriesResponse> getAllCategoriesAsync(MusicShopClient.ServiceReference1.getAllCategoriesRequest request);
         
-        // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/helloRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/helloResponse")]
+        // CODEGEN: Parameter 'id' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewOrderRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewOrderResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        MusicShopClient.ServiceReference1.helloResponse hello(MusicShopClient.ServiceReference1.helloRequest request);
+        MusicShopClient.ServiceReference1.addNewOrderResponse addNewOrder(MusicShopClient.ServiceReference1.addNewOrderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/helloRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/helloResponse")]
-        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.helloResponse> helloAsync(MusicShopClient.ServiceReference1.helloRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewOrderRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewOrderResponse")]
+        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.addNewOrderResponse> addNewOrderAsync(MusicShopClient.ServiceReference1.addNewOrderRequest request);
         
         // CODEGEN: Parameter 'id' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewProductRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewProductResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/removeProductRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/removeProductResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        MusicShopClient.ServiceReference1.addNewProductResponse addNewProduct(MusicShopClient.ServiceReference1.addNewProductRequest request);
+        MusicShopClient.ServiceReference1.removeProductResponse removeProduct(MusicShopClient.ServiceReference1.removeProductRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewProductRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewProductResponse")]
-        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.addNewProductResponse> addNewProductAsync(MusicShopClient.ServiceReference1.addNewProductRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/removeProductRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/removeProductResponse")]
+        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.removeProductResponse> removeProductAsync(MusicShopClient.ServiceReference1.removeProductRequest request);
+        
+        // CODEGEN: Parameter 'id' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewCategoryRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewCategoryResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        MusicShopClient.ServiceReference1.addNewCategoryResponse addNewCategory(MusicShopClient.ServiceReference1.addNewCategoryRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewCategoryRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewCategoryResponse")]
+        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.addNewCategoryResponse> addNewCategoryAsync(MusicShopClient.ServiceReference1.addNewCategoryRequest request);
         
         // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllProductsRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllProductsResponse")]
@@ -50,17 +57,35 @@ namespace MusicShopClient.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllProductsRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllProductsResponse")]
         System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.getAllProductsResponse> getAllProductsAsync(MusicShopClient.ServiceReference1.getAllProductsRequest request);
         
-        // CODEGEN: Parameter 'id' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/removeProductRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/removeProductResponse")]
+        // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllOrdersRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllOrdersResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        MusicShopClient.ServiceReference1.removeProductResponse removeProduct(MusicShopClient.ServiceReference1.removeProductRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        MusicShopClient.ServiceReference1.getAllOrdersResponse getAllOrders(MusicShopClient.ServiceReference1.getAllOrdersRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/removeProductRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/removeProductResponse")]
-        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.removeProductResponse> removeProductAsync(MusicShopClient.ServiceReference1.removeProductRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllOrdersRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllOrdersResponse")]
+        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.getAllOrdersResponse> getAllOrdersAsync(MusicShopClient.ServiceReference1.getAllOrdersRequest request);
+        
+        // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllUsersRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllUsersResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        MusicShopClient.ServiceReference1.getAllUsersResponse getAllUsers(MusicShopClient.ServiceReference1.getAllUsersRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllUsersRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/getAllUsersResponse")]
+        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.getAllUsersResponse> getAllUsersAsync(MusicShopClient.ServiceReference1.getAllUsersRequest request);
+        
+        // CODEGEN: Parameter 'id' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewProductRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewProductResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        MusicShopClient.ServiceReference1.addNewProductResponse addNewProduct(MusicShopClient.ServiceReference1.addNewProductRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewProductRequest", ReplyAction="http://ws.musicshopapp.pai.lodz.pl/MusicShopWebService/addNewProductResponse")]
+        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.addNewProductResponse> addNewProductAsync(MusicShopClient.ServiceReference1.addNewProductRequest request);
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -120,7 +145,323 @@ namespace MusicShopClient.ServiceReference1 {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/")]
+    public partial class users : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string usrFirstNameField;
+        
+        private decimal usrIdField;
+        
+        private bool usrIdFieldSpecified;
+        
+        private string usrIsActiveField;
+        
+        private string usrLastNameField;
+        
+        private string usrLoginField;
+        
+        private string usrPasswordField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string usrFirstName {
+            get {
+                return this.usrFirstNameField;
+            }
+            set {
+                this.usrFirstNameField = value;
+                this.RaisePropertyChanged("usrFirstName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public decimal usrId {
+            get {
+                return this.usrIdField;
+            }
+            set {
+                this.usrIdField = value;
+                this.RaisePropertyChanged("usrId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool usrIdSpecified {
+            get {
+                return this.usrIdFieldSpecified;
+            }
+            set {
+                this.usrIdFieldSpecified = value;
+                this.RaisePropertyChanged("usrIdSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string usrIsActive {
+            get {
+                return this.usrIsActiveField;
+            }
+            set {
+                this.usrIsActiveField = value;
+                this.RaisePropertyChanged("usrIsActive");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string usrLastName {
+            get {
+                return this.usrLastNameField;
+            }
+            set {
+                this.usrLastNameField = value;
+                this.RaisePropertyChanged("usrLastName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string usrLogin {
+            get {
+                return this.usrLoginField;
+            }
+            set {
+                this.usrLoginField = value;
+                this.RaisePropertyChanged("usrLogin");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string usrPassword {
+            get {
+                return this.usrPasswordField;
+            }
+            set {
+                this.usrPasswordField = value;
+                this.RaisePropertyChanged("usrPassword");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/")]
+    public partial class orders : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private System.DateTime ordCompletedDateField;
+        
+        private bool ordCompletedDateFieldSpecified;
+        
+        private decimal ordIdField;
+        
+        private bool ordIdFieldSpecified;
+        
+        private string ordIsCompletedField;
+        
+        private string ordIsPaidField;
+        
+        private System.DateTime ordOrderDateField;
+        
+        private bool ordOrderDateFieldSpecified;
+        
+        private System.DateTime ordPaiedDateField;
+        
+        private bool ordPaiedDateFieldSpecified;
+        
+        private decimal ordTotalPriceField;
+        
+        private bool ordTotalPriceFieldSpecified;
+        
+        private users ordUsrIdField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public System.DateTime ordCompletedDate {
+            get {
+                return this.ordCompletedDateField;
+            }
+            set {
+                this.ordCompletedDateField = value;
+                this.RaisePropertyChanged("ordCompletedDate");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ordCompletedDateSpecified {
+            get {
+                return this.ordCompletedDateFieldSpecified;
+            }
+            set {
+                this.ordCompletedDateFieldSpecified = value;
+                this.RaisePropertyChanged("ordCompletedDateSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public decimal ordId {
+            get {
+                return this.ordIdField;
+            }
+            set {
+                this.ordIdField = value;
+                this.RaisePropertyChanged("ordId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ordIdSpecified {
+            get {
+                return this.ordIdFieldSpecified;
+            }
+            set {
+                this.ordIdFieldSpecified = value;
+                this.RaisePropertyChanged("ordIdSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string ordIsCompleted {
+            get {
+                return this.ordIsCompletedField;
+            }
+            set {
+                this.ordIsCompletedField = value;
+                this.RaisePropertyChanged("ordIsCompleted");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string ordIsPaid {
+            get {
+                return this.ordIsPaidField;
+            }
+            set {
+                this.ordIsPaidField = value;
+                this.RaisePropertyChanged("ordIsPaid");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public System.DateTime ordOrderDate {
+            get {
+                return this.ordOrderDateField;
+            }
+            set {
+                this.ordOrderDateField = value;
+                this.RaisePropertyChanged("ordOrderDate");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ordOrderDateSpecified {
+            get {
+                return this.ordOrderDateFieldSpecified;
+            }
+            set {
+                this.ordOrderDateFieldSpecified = value;
+                this.RaisePropertyChanged("ordOrderDateSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public System.DateTime ordPaiedDate {
+            get {
+                return this.ordPaiedDateField;
+            }
+            set {
+                this.ordPaiedDateField = value;
+                this.RaisePropertyChanged("ordPaiedDate");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ordPaiedDateSpecified {
+            get {
+                return this.ordPaiedDateFieldSpecified;
+            }
+            set {
+                this.ordPaiedDateFieldSpecified = value;
+                this.RaisePropertyChanged("ordPaiedDateSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public decimal ordTotalPrice {
+            get {
+                return this.ordTotalPriceField;
+            }
+            set {
+                this.ordTotalPriceField = value;
+                this.RaisePropertyChanged("ordTotalPrice");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ordTotalPriceSpecified {
+            get {
+                return this.ordTotalPriceFieldSpecified;
+            }
+            set {
+                this.ordTotalPriceFieldSpecified = value;
+                this.RaisePropertyChanged("ordTotalPriceSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public users ordUsrId {
+            get {
+                return this.ordUsrIdField;
+            }
+            set {
+                this.ordUsrIdField = value;
+                this.RaisePropertyChanged("ordUsrId");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -280,79 +621,114 @@ namespace MusicShopClient.ServiceReference1 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="hello", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
-    public partial class helloRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="addNewOrder", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
+    public partial class addNewOrderRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string name;
+        public int id;
         
-        public helloRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string userLogin;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string productName;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime orderDate;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime paymentDate;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime completedDate;
+        
+        public addNewOrderRequest() {
         }
         
-        public helloRequest(string name) {
-            this.name = name;
+        public addNewOrderRequest(int id, string userLogin, string productName, System.DateTime orderDate, System.DateTime paymentDate, System.DateTime completedDate) {
+            this.id = id;
+            this.userLogin = userLogin;
+            this.productName = productName;
+            this.orderDate = orderDate;
+            this.paymentDate = paymentDate;
+            this.completedDate = completedDate;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="helloResponse", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
-    public partial class helloResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="addNewOrderResponse", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
+    public partial class addNewOrderResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string @return;
-        
-        public helloResponse() {
-        }
-        
-        public helloResponse(string @return) {
-            this.@return = @return;
+        public addNewOrderResponse() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="addNewProduct", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
-    public partial class addNewProductRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="removeProduct", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
+    public partial class removeProductRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public decimal id;
+        public int id;
+        
+        public removeProductRequest() {
+        }
+        
+        public removeProductRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="removeProductResponse", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
+    public partial class removeProductResponse {
+        
+        public removeProductResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="addNewCategory", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
+    public partial class addNewCategoryRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public string name;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public decimal price;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public long amount;
-        
-        public addNewProductRequest() {
+        public addNewCategoryRequest() {
         }
         
-        public addNewProductRequest(decimal id, string name, decimal price, long amount) {
+        public addNewCategoryRequest(int id, string name) {
             this.id = id;
             this.name = name;
-            this.price = price;
-            this.amount = amount;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="addNewProductResponse", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
-    public partial class addNewProductResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="addNewCategoryResponse", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
+    public partial class addNewCategoryResponse {
         
-        public addNewProductResponse() {
+        public addNewCategoryResponse() {
         }
     }
     
@@ -387,28 +763,109 @@ namespace MusicShopClient.ServiceReference1 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="removeProduct", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
-    public partial class removeProductRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getAllOrders", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
+    public partial class getAllOrdersRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public removeProductRequest() {
-        }
-        
-        public removeProductRequest(int id) {
-            this.id = id;
+        public getAllOrdersRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="removeProductResponse", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
-    public partial class removeProductResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getAllOrdersResponse", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
+    public partial class getAllOrdersResponse {
         
-        public removeProductResponse() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public MusicShopClient.ServiceReference1.orders[] @return;
+        
+        public getAllOrdersResponse() {
+        }
+        
+        public getAllOrdersResponse(MusicShopClient.ServiceReference1.orders[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getAllUsers", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
+    public partial class getAllUsersRequest {
+        
+        public getAllUsersRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getAllUsersResponse", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
+    public partial class getAllUsersResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public MusicShopClient.ServiceReference1.users[] @return;
+        
+        public getAllUsersResponse() {
+        }
+        
+        public getAllUsersResponse(MusicShopClient.ServiceReference1.users[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="addNewProduct", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
+    public partial class addNewProductRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double id;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string name;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double price;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public long amount;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string description;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.musicshopapp.pai.lodz.pl/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string catName;
+        
+        public addNewProductRequest() {
+        }
+        
+        public addNewProductRequest(double id, string name, double price, long amount, string description, string catName) {
+            this.id = id;
+            this.name = name;
+            this.price = price;
+            this.amount = amount;
+            this.description = description;
+            this.catName = catName;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="addNewProductResponse", WrapperNamespace="http://ws.musicshopapp.pai.lodz.pl/", IsWrapped=true)]
+    public partial class addNewProductResponse {
+        
+        public addNewProductResponse() {
         }
     }
     
@@ -461,54 +918,81 @@ namespace MusicShopClient.ServiceReference1 {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        MusicShopClient.ServiceReference1.helloResponse MusicShopClient.ServiceReference1.MusicShopWebService.hello(MusicShopClient.ServiceReference1.helloRequest request) {
-            return base.Channel.hello(request);
+        MusicShopClient.ServiceReference1.addNewOrderResponse MusicShopClient.ServiceReference1.MusicShopWebService.addNewOrder(MusicShopClient.ServiceReference1.addNewOrderRequest request) {
+            return base.Channel.addNewOrder(request);
         }
         
-        public string hello(string name) {
-            MusicShopClient.ServiceReference1.helloRequest inValue = new MusicShopClient.ServiceReference1.helloRequest();
-            inValue.name = name;
-            MusicShopClient.ServiceReference1.helloResponse retVal = ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).hello(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.helloResponse> MusicShopClient.ServiceReference1.MusicShopWebService.helloAsync(MusicShopClient.ServiceReference1.helloRequest request) {
-            return base.Channel.helloAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.helloResponse> helloAsync(string name) {
-            MusicShopClient.ServiceReference1.helloRequest inValue = new MusicShopClient.ServiceReference1.helloRequest();
-            inValue.name = name;
-            return ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).helloAsync(inValue);
+        public void addNewOrder(int id, string userLogin, string productName, System.DateTime orderDate, System.DateTime paymentDate, System.DateTime completedDate) {
+            MusicShopClient.ServiceReference1.addNewOrderRequest inValue = new MusicShopClient.ServiceReference1.addNewOrderRequest();
+            inValue.id = id;
+            inValue.userLogin = userLogin;
+            inValue.productName = productName;
+            inValue.orderDate = orderDate;
+            inValue.paymentDate = paymentDate;
+            inValue.completedDate = completedDate;
+            MusicShopClient.ServiceReference1.addNewOrderResponse retVal = ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).addNewOrder(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        MusicShopClient.ServiceReference1.addNewProductResponse MusicShopClient.ServiceReference1.MusicShopWebService.addNewProduct(MusicShopClient.ServiceReference1.addNewProductRequest request) {
-            return base.Channel.addNewProduct(request);
+        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.addNewOrderResponse> MusicShopClient.ServiceReference1.MusicShopWebService.addNewOrderAsync(MusicShopClient.ServiceReference1.addNewOrderRequest request) {
+            return base.Channel.addNewOrderAsync(request);
         }
         
-        public void addNewProduct(decimal id, string name, decimal price, long amount) {
-            MusicShopClient.ServiceReference1.addNewProductRequest inValue = new MusicShopClient.ServiceReference1.addNewProductRequest();
+        public System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.addNewOrderResponse> addNewOrderAsync(int id, string userLogin, string productName, System.DateTime orderDate, System.DateTime paymentDate, System.DateTime completedDate) {
+            MusicShopClient.ServiceReference1.addNewOrderRequest inValue = new MusicShopClient.ServiceReference1.addNewOrderRequest();
+            inValue.id = id;
+            inValue.userLogin = userLogin;
+            inValue.productName = productName;
+            inValue.orderDate = orderDate;
+            inValue.paymentDate = paymentDate;
+            inValue.completedDate = completedDate;
+            return ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).addNewOrderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        MusicShopClient.ServiceReference1.removeProductResponse MusicShopClient.ServiceReference1.MusicShopWebService.removeProduct(MusicShopClient.ServiceReference1.removeProductRequest request) {
+            return base.Channel.removeProduct(request);
+        }
+        
+        public void removeProduct(int id) {
+            MusicShopClient.ServiceReference1.removeProductRequest inValue = new MusicShopClient.ServiceReference1.removeProductRequest();
+            inValue.id = id;
+            MusicShopClient.ServiceReference1.removeProductResponse retVal = ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).removeProduct(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.removeProductResponse> MusicShopClient.ServiceReference1.MusicShopWebService.removeProductAsync(MusicShopClient.ServiceReference1.removeProductRequest request) {
+            return base.Channel.removeProductAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.removeProductResponse> removeProductAsync(int id) {
+            MusicShopClient.ServiceReference1.removeProductRequest inValue = new MusicShopClient.ServiceReference1.removeProductRequest();
+            inValue.id = id;
+            return ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).removeProductAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        MusicShopClient.ServiceReference1.addNewCategoryResponse MusicShopClient.ServiceReference1.MusicShopWebService.addNewCategory(MusicShopClient.ServiceReference1.addNewCategoryRequest request) {
+            return base.Channel.addNewCategory(request);
+        }
+        
+        public void addNewCategory(int id, string name) {
+            MusicShopClient.ServiceReference1.addNewCategoryRequest inValue = new MusicShopClient.ServiceReference1.addNewCategoryRequest();
             inValue.id = id;
             inValue.name = name;
-            inValue.price = price;
-            inValue.amount = amount;
-            MusicShopClient.ServiceReference1.addNewProductResponse retVal = ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).addNewProduct(inValue);
+            MusicShopClient.ServiceReference1.addNewCategoryResponse retVal = ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).addNewCategory(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.addNewProductResponse> MusicShopClient.ServiceReference1.MusicShopWebService.addNewProductAsync(MusicShopClient.ServiceReference1.addNewProductRequest request) {
-            return base.Channel.addNewProductAsync(request);
+        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.addNewCategoryResponse> MusicShopClient.ServiceReference1.MusicShopWebService.addNewCategoryAsync(MusicShopClient.ServiceReference1.addNewCategoryRequest request) {
+            return base.Channel.addNewCategoryAsync(request);
         }
         
-        public System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.addNewProductResponse> addNewProductAsync(decimal id, string name, decimal price, long amount) {
-            MusicShopClient.ServiceReference1.addNewProductRequest inValue = new MusicShopClient.ServiceReference1.addNewProductRequest();
+        public System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.addNewCategoryResponse> addNewCategoryAsync(int id, string name) {
+            MusicShopClient.ServiceReference1.addNewCategoryRequest inValue = new MusicShopClient.ServiceReference1.addNewCategoryRequest();
             inValue.id = id;
             inValue.name = name;
-            inValue.price = price;
-            inValue.amount = amount;
-            return ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).addNewProductAsync(inValue);
+            return ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).addNewCategoryAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -533,25 +1017,77 @@ namespace MusicShopClient.ServiceReference1 {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        MusicShopClient.ServiceReference1.removeProductResponse MusicShopClient.ServiceReference1.MusicShopWebService.removeProduct(MusicShopClient.ServiceReference1.removeProductRequest request) {
-            return base.Channel.removeProduct(request);
+        MusicShopClient.ServiceReference1.getAllOrdersResponse MusicShopClient.ServiceReference1.MusicShopWebService.getAllOrders(MusicShopClient.ServiceReference1.getAllOrdersRequest request) {
+            return base.Channel.getAllOrders(request);
         }
         
-        public void removeProduct(int id) {
-            MusicShopClient.ServiceReference1.removeProductRequest inValue = new MusicShopClient.ServiceReference1.removeProductRequest();
-            inValue.id = id;
-            MusicShopClient.ServiceReference1.removeProductResponse retVal = ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).removeProduct(inValue);
+        public MusicShopClient.ServiceReference1.orders[] getAllOrders() {
+            MusicShopClient.ServiceReference1.getAllOrdersRequest inValue = new MusicShopClient.ServiceReference1.getAllOrdersRequest();
+            MusicShopClient.ServiceReference1.getAllOrdersResponse retVal = ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).getAllOrders(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.removeProductResponse> MusicShopClient.ServiceReference1.MusicShopWebService.removeProductAsync(MusicShopClient.ServiceReference1.removeProductRequest request) {
-            return base.Channel.removeProductAsync(request);
+        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.getAllOrdersResponse> MusicShopClient.ServiceReference1.MusicShopWebService.getAllOrdersAsync(MusicShopClient.ServiceReference1.getAllOrdersRequest request) {
+            return base.Channel.getAllOrdersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.removeProductResponse> removeProductAsync(int id) {
-            MusicShopClient.ServiceReference1.removeProductRequest inValue = new MusicShopClient.ServiceReference1.removeProductRequest();
+        public System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.getAllOrdersResponse> getAllOrdersAsync() {
+            MusicShopClient.ServiceReference1.getAllOrdersRequest inValue = new MusicShopClient.ServiceReference1.getAllOrdersRequest();
+            return ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).getAllOrdersAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        MusicShopClient.ServiceReference1.getAllUsersResponse MusicShopClient.ServiceReference1.MusicShopWebService.getAllUsers(MusicShopClient.ServiceReference1.getAllUsersRequest request) {
+            return base.Channel.getAllUsers(request);
+        }
+        
+        public MusicShopClient.ServiceReference1.users[] getAllUsers() {
+            MusicShopClient.ServiceReference1.getAllUsersRequest inValue = new MusicShopClient.ServiceReference1.getAllUsersRequest();
+            MusicShopClient.ServiceReference1.getAllUsersResponse retVal = ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).getAllUsers(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.getAllUsersResponse> MusicShopClient.ServiceReference1.MusicShopWebService.getAllUsersAsync(MusicShopClient.ServiceReference1.getAllUsersRequest request) {
+            return base.Channel.getAllUsersAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.getAllUsersResponse> getAllUsersAsync() {
+            MusicShopClient.ServiceReference1.getAllUsersRequest inValue = new MusicShopClient.ServiceReference1.getAllUsersRequest();
+            return ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).getAllUsersAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        MusicShopClient.ServiceReference1.addNewProductResponse MusicShopClient.ServiceReference1.MusicShopWebService.addNewProduct(MusicShopClient.ServiceReference1.addNewProductRequest request) {
+            return base.Channel.addNewProduct(request);
+        }
+        
+        public void addNewProduct(double id, string name, double price, long amount, string description, string catName) {
+            MusicShopClient.ServiceReference1.addNewProductRequest inValue = new MusicShopClient.ServiceReference1.addNewProductRequest();
             inValue.id = id;
-            return ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).removeProductAsync(inValue);
+            inValue.name = name;
+            inValue.price = price;
+            inValue.amount = amount;
+            inValue.description = description;
+            inValue.catName = catName;
+            MusicShopClient.ServiceReference1.addNewProductResponse retVal = ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).addNewProduct(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.addNewProductResponse> MusicShopClient.ServiceReference1.MusicShopWebService.addNewProductAsync(MusicShopClient.ServiceReference1.addNewProductRequest request) {
+            return base.Channel.addNewProductAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<MusicShopClient.ServiceReference1.addNewProductResponse> addNewProductAsync(double id, string name, double price, long amount, string description, string catName) {
+            MusicShopClient.ServiceReference1.addNewProductRequest inValue = new MusicShopClient.ServiceReference1.addNewProductRequest();
+            inValue.id = id;
+            inValue.name = name;
+            inValue.price = price;
+            inValue.amount = amount;
+            inValue.description = description;
+            inValue.catName = catName;
+            return ((MusicShopClient.ServiceReference1.MusicShopWebService)(this)).addNewProductAsync(inValue);
         }
     }
 }

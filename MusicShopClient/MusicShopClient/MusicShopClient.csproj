@@ -96,6 +96,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Service References\ServiceReference1\MusicShopClient.ServiceReference1.addNewCategoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\MusicShopClient.ServiceReference1.addNewOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReference1\MusicShopClient.ServiceReference1.addNewProductResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -105,16 +111,25 @@
     <None Include="Service References\ServiceReference1\MusicShopClient.ServiceReference1.getAllCategoriesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\ServiceReference1\MusicShopClient.ServiceReference1.getAllOrdersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReference1\MusicShopClient.ServiceReference1.getAllProductsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ServiceReference1\MusicShopClient.ServiceReference1.helloResponse.datasource">
+    <None Include="Service References\ServiceReference1\MusicShopClient.ServiceReference1.getAllUsersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\MusicShopClient.ServiceReference1.orders.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference1\MusicShopClient.ServiceReference1.products.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference1\MusicShopClient.ServiceReference1.removeProductResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\MusicShopClient.ServiceReference1.users.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceReference1\MusicShopWebService.wsdl" />
