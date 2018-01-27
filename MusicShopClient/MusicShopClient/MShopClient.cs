@@ -71,16 +71,16 @@ namespace MusicShopClient
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            using (MusicShopWebServiceClient service = new MusicShopWebServiceClient())
-            {
-                categories[] data = service.getAllCategories();
+            //using (MusicShopWebServiceClient service = new MusicShopWebServiceClient())
+            //{
+            //    categories[] data = service.getAllCategories();
 
-                comboBoxCategories.Items.Clear();
-                foreach (categories c in data)
-                {
-                    comboBoxCategories.Items.Add(c.catName);
-                }
-            }
+            //    comboBoxCategories.Items.Clear();
+            //    foreach (categories c in data)
+            //    {
+            //        comboBoxCategories.Items.Add(c.catName);
+            //    }
+            //}
         }
 
         private void button4_Click(object sender, EventArgs e)
